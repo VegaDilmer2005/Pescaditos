@@ -2,6 +2,8 @@ package com.example.Pescaditos.Model;
 
 import jakarta.persistence.*;
 
+@Entity
+@Table(name = "combinado")
 public class Combinado {
 
     @Id
