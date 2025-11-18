@@ -34,13 +34,11 @@ public class CombinadoController {
             return ResponseEntity.badRequest().body("el nombre es obligatorio");
         }
 
-        if(combinado.getPrecio()== null ){
+        if(combinado.getPrecio()== 0 ){
             return ResponseEntity.badRequest().body("el precio es obligatorio");
         }
 
-        if (!combinado.isDisponible()) {
-            return ResponseEntity.badRequest().body("la disponibilidad es obligatoria");
-        }
+
 
         if(combinado.getCategoria() == null){
             return ResponseEntity.badRequest().body("la categoria es obligatoria");
